@@ -1,0 +1,1 @@
+export const url = `https://gorest.co.in/public/v2/posts?access-token=${process.env.REACT_APP_GOREST_TOKEN}`;
