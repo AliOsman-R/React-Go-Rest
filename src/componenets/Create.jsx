@@ -26,12 +26,13 @@ function Create({ setIsCreate, isCreate, setPosts, posts }) {
           setTitle("");
           setBody("");
           setIsCreate(!isCreate);
-          setAdding(false);
         })
         .catch((err) => {
           console.log(err);
+          alert("somthing went wrong!! try later");
+        })
+        .finally(() => {
           setAdding(false);
-          alert(err);
         });
     }
   };

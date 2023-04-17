@@ -20,10 +20,13 @@ const GO_REST = () => {
       .get(url)
       .then((response) => {
         setPosts(response.data);
-        setIsSpinner(false);
       })
       .catch((error) => {
         console.log(error);
+        alert("somthing went wrong!! try later");
+      })
+      .finally(() => {
+        setIsSpinner(false);
       });
   }, []);
 

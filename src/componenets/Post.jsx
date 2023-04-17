@@ -28,9 +28,11 @@ function Post({ posts, handleDelete, setPosts }) {
       })
       .catch((err) => {
         console.log(err);
-        alert(err);
+        alert("somthing went wrong!! try later");
+      })
+      .finally(() => {
+        setEditeId("");
       });
-    setEditeId("");
   };
 
   return (
